@@ -62,7 +62,7 @@ passport.deserializeUser(async function (id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "https://smiling-puce-elephant.cyclic.app/auth/google/secrets",
+    callbackURL: "https://navy-blue-crab-coat.cyclic.app/auth/google/secrets",
     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
 },
     function (accessToken, refreshToken, profile, cb) {
@@ -75,7 +75,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
     clientID: process.env.FACEBOOK_APP_ID,
     clientSecret: process.env.FACEBOOK_APP_SECRET,
-    callbackURL: "https://smiling-puce-elephant.cyclic.app/auth/facebook/secrets"
+    callbackURL: "https://navy-blue-crab-coat.cyclic.app/auth/facebook/secrets"
 },
 
     function (accessToken, refreshToken, profile, cb) {
